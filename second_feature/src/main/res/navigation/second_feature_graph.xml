@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/second_feature_graph"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/secondFeature">
+
+    <include app:graph="@navigation/third_feature_graph" />
+
+    <fragment
+        android:id="@+id/secondFeature"
+        android:name="com.jdapplications.second_feature.SecondFeatureFragment"
+        android:label="second_feature_fragment"
+        tools:layout="@layout/second_feature_fragment" >
+        <action
+            android:id="@+id/openThirdFeatureAction"
+            app:destination="@id/third_feature_graph"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+</navigation>

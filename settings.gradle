@@ -1,0 +1,1 @@
+include ':app', ':second_feature', ':third_feature'
