@@ -1,0 +1,30 @@
+package com.jdapplications.third_feature
+
+import androidx.lifecycle.ViewModelProviders
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+
+
+class ThirdFeatureFragmentSecondScreen : Fragment() {
+
+    companion object {
+        fun newInstance() = ThirdFeatureFragmentSecondScreen()
+    }
+
+    private lateinit var viewModel: ThirdFeatureFragmentSecondScreenViewModel
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.third_feature_fragment_second_screen_fragment, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        viewModel = ViewModelProviders.of(this).get(ThirdFeatureFragmentSecondScreenViewModel::class.java)
+        // TODO: Use the ViewModel
+    }
+
+}

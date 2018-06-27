@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ThirdFeatureFragment">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Feature, First Screen" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/thirdFeatureNavigateInternalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open second screen" />
+
+</LinearLayout>

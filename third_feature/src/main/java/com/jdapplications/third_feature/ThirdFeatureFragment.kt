@@ -1,11 +1,13 @@
 package com.jdapplications.third_feature
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.third_feature_fragment.view.*
 
 
 class ThirdFeatureFragment : Fragment() {
@@ -18,7 +20,11 @@ class ThirdFeatureFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.third_feature_fragment, container, false)
+        val view = inflater.inflate(R.layout.third_feature_fragment, container, false)
+        view.thirdFeatureNavigateInternalButton.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.navigateToSecondScreen)
+        }
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
