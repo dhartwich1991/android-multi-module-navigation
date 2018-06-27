@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fourth_feature_graph"
+    app:startDestination="@id/fourthFeatureFragment">
+
+    <fragment
+        android:id="@+id/fourthFeatureFragment"
+        android:name="com.jdapplications.fourth_feature.FourthFeatureFragment"
+        android:label="fourth_feature_fragment"
+        tools:layout="@layout/fourth_feature_fragment" />
+</navigation>
