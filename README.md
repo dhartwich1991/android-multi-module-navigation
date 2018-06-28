@@ -2,6 +2,7 @@
 A showcase app for the new navigation component with a multiple module project
 
 Check out the article on Medium:
+
 https://medium.com/@hartwich.daniel/multi-module-navigation-with-the-android-architecture-component-82ed028fa1d9
 
 
